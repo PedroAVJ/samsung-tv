@@ -1,6 +1,6 @@
 {
   "name": "samsung-tv",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Discover, pair, and control Samsung Tizen TVs on a local network with a portable CLI and MCP server.",
   "author": {
     "name": "PedroAVJ",

@@ -1,6 +1,6 @@
 {
   "name": "samsung-tv",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Discover, pair, and control Samsung Tizen TVs on a local network with a portable CLI and MCP server.",
   "author": {
     "name": "PedroAVJ",
@@ -12,7 +12,7 @@
     "shortDescription": "Control a Samsung TV on your local network",
     "longDescription": "Discover Samsung Tizen TVs, inspect status, pair with on-screen approval, and send requested remote commands. Device selection, pairing tokens, optional input shortcuts, and external voice gateway settings stay in private local configuration.",
     "developerName": "PedroAVJ",
-    "category": "Productivity",
+    "category": "Media",
     "capabilities": [
       "Interactive",
       "Write"

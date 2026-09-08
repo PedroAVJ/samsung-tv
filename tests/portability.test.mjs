@@ -43,7 +43,7 @@ test("MCP initialize and tool discovery work without a device or authentication"
     const result = spawnSync(server.command, server.args, { cwd: directory, env: { ...env, CLAUDE_PLUGIN_ROOT: root }, input, encoding: "utf8", timeout: 4000 });
     assert.equal(result.status, 0, result.stderr);
     const messages = result.stdout.trim().split("\n").map(line => JSON.parse(line));
-    assert.equal(messages.find(value => value.id === 0).result.serverInfo.version, "0.2.0");
+    assert.equal(messages.find(value => value.id === 0).result.serverInfo.version, "0.2.1");
     const names = messages.find(value => value.id === 1).result.tools.map(tool => tool.name);
     assert.ok(names.includes("find_samsung_tvs"));
     assert.ok(names.includes("samsung_tv_power_off"));

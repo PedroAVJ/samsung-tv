@@ -63,7 +63,7 @@ rl.on("line", async (line) => {
   try {
     let value;
     if (request.method === "initialize") {
-      value = { protocolVersion: request.params?.protocolVersion || "2025-06-18", capabilities: { tools: {} }, serverInfo: { name: "samsung-tv", version: "0.2.0" } };
+      value = { protocolVersion: request.params?.protocolVersion || "2025-06-18", capabilities: { tools: {} }, serverInfo: { name: "samsung-tv", version: "0.2.1" } };
     } else if (request.method === "ping") value = {};
     else if (request.method === "tools/list") value = { tools };
     else if (request.method === "tools/call") value = result(await callTool(request.params?.name, request.params?.arguments || {}));

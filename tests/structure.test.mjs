@@ -12,7 +12,7 @@ test("both clients share the published package contract", async () => {
   const [codex, claude, pkg] = await Promise.all([json(".codex-plugin/plugin.json"), json(".claude-plugin/plugin.json"), json("package.json")]);
   for (const manifest of [codex, claude, pkg]) {
     assert.equal(manifest.name, expectedName);
-    assert.equal(manifest.version, "0.2.0");
+    assert.equal(manifest.version, "0.2.1");
     assert.equal(manifest.license, "MIT");
   }
   assert.equal(codex.repository, `https://github.com/PedroAVJ/${expectedName}`);
