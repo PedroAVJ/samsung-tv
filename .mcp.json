@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "samsung-tv": {
+      "command": "sh",
+      "args": [
+        "-c",
+        "root=\"${CLAUDE_PLUGIN_ROOT:-${CODEX_PLUGIN_ROOT:-.}}\"; exec \"$root/scripts/launch-mcp\""
+      ]
+    }
+  }
+}

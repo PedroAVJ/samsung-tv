@@ -1,0 +1,14 @@
+{
+  "name": "samsung-tv",
+  "version": "0.2.0",
+  "description": "Discover, pair, and control Samsung Tizen TVs on a local network with a portable CLI and MCP server.",
+  "author": {
+    "name": "PedroAVJ",
+    "url": "https://github.com/PedroAVJ"
+  },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "homepage": "https://github.com/PedroAVJ/samsung-tv",
+  "repository": "https://github.com/PedroAVJ/samsung-tv",
+  "license": "MIT"
+}

@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+entry=${1:-}
+case "$entry" in cli|mcp) shift ;; *) echo "Unknown Samsung TV entry point." >&2; exit 2 ;; esac
+if [ ! -f "$root/node_modules/ws/package.json" ]; then
+  npm ci --prefix "$root" --omit=dev --ignore-scripts --no-audit --no-fund >&2
+fi
+exec node "$root/src/$entry.mjs" "$@"

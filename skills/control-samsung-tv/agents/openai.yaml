@@ -1,0 +1,6 @@
+interface:
+  display_name: "Samsung TV"
+  short_description: "Operate a selected local Samsung television"
+  default_prompt: "Use $control-samsung-tv to inspect my selected television."
+policy:
+  allow_implicit_invocation: true
